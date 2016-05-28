@@ -18,17 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e38-gi-2b2">
-                                <rect key="frame" x="273" y="285" width="53" height="30"/>
-                                <state key="normal" title="Present"/>
+                                <rect key="frame" x="262" y="164" width="75" height="30"/>
+                                <state key="normal" title="Pick Image"/>
                                 <connections>
                                     <action selector="goToImagePickerController" destination="BYZ-38-t0r" eventType="touchUpInside" id="NTY-aY-Ysk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-In-02R">
+                                <rect key="frame" x="251" y="276" width="96" height="30"/>
+                                <state key="normal" title="Display Image"/>
+                                <connections>
+                                    <action selector="goToImageActivity" destination="BYZ-38-t0r" eventType="touchUpInside" id="klq-aQ-2oq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e38-gi-2b2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cMG-W0-2vE"/>
+                            <constraint firstItem="Euh-In-02R" firstAttribute="top" secondItem="e38-gi-2b2" secondAttribute="bottom" constant="82" id="JoI-vg-ASR"/>
+                            <constraint firstItem="e38-gi-2b2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-121" id="cMG-W0-2vE"/>
                             <constraint firstItem="e38-gi-2b2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fum-nq-GS2"/>
+                            <constraint firstItem="Euh-In-02R" firstAttribute="centerX" secondItem="e38-gi-2b2" secondAttribute="centerX" id="gaT-8T-z3H"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     let imageController = UIImagePickerController()
     self.presentViewController(imageController, animated: true, completion: nil)
   }
+  
+  @IBAction func goToImageActivity() {
+    let image = UIImage()
+    let nextController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+    self.presentViewController(nextController, animated: true, completion: nil)
+  }
 
 }
 
